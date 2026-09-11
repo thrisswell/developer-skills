@@ -42,7 +42,7 @@ Whether you're building APIs, refactoring React components, cleaning up dead cod
 | [`refactor-node`](./refactor-node/SKILL.md) | Backend | Production Node.js best practices | Hardened backend services, middleware, and DB queries |
 | [`refactor-python`](./refactor-python/SKILL.md) | Backend | Modern Python & PEP 8 standards | Clean typing, defensive errors, and SAST hardening |
 | [`connect-react-to-node-backend`](./connect-react-to-node-backend/SKILL.md) | Fullstack | Frontend-to-Backend integration | Wiring React UI components to backend endpoints |
-| [`refactor-react-modular`](./refacotr-react-modular/SKILL.md) | Frontend | React component modularization | Breaking monolithic components into reusable units |
+| [`refactor-react-modular`](./refactor-react-modular/SKILL.md) | Frontend | React component modularization | Breaking monolithic components into reusable units |
 | [`improve-ux`](./improve-ux/SKILL.md) | Frontend | UI/UX polish & accessibility | Enhancing layout, responsive design, spacing, and a11y |
 | [`refactor-css`](./refactor-css/SKILL.md) | Frontend | CSS modernization & responsiveness | Cleaning legacy styles, naming, and mobile responsiveness |
 | [`fix-js-sec-bug`](./fix-js-sec-bug/SKILL.md) | Security | Root-cause vulnerability patching | Resolving SAST findings (Snyk, SonarQube, Semgrep, audit) |
@@ -64,7 +64,7 @@ Whether you're building APIs, refactoring React components, cleaning up dead cod
 
 ### 2. Frontend & UI/UX
 
-#### [`refacotr-react-modular`](./refacotr-react-modular/SKILL.md)
+#### [`refactor-react-modular`](./refactor-react-modular/SKILL.md)
 * **Trigger:** *"Refactor this React component"*, *"Break this component down"*, *"Modularize frontend"*
 * **Description:** Splits monolithic React components into clean, testable, and reusable child components while preserving state integrity and design guidelines.
 
