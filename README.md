@@ -10,6 +10,7 @@ A curated collection of modular, production-grade skills and instructions for Cl
 ## 📌 Table of Contents
 
 - [Overview](#overview)
+- [How to Use](#how-to-use)
 - [Skills Catalog](#skills-catalog)
 - [Skills Breakdown](#skills-breakdown)
   - [Architecture & Planning](#1-architecture--planning)
@@ -17,7 +18,6 @@ A curated collection of modular, production-grade skills and instructions for Cl
   - [Backend & APIs](#3-backend--apis)
   - [Security & Code Quality](#4-security--code-quality)
   - [Code Understanding & Communication](#5-code-understanding--communication)
-- [How to Use](#how-to-use)
 - [Directory Structure](#directory-structure)
 - [Authoring New Skills](#authoring-new-skills)
 - [Contributing](#contributing)
@@ -30,6 +30,44 @@ A curated collection of modular, production-grade skills and instructions for Cl
 This is a collection of ready-to-use skills built for JavaScript and Python developers to make everyday coding easier. 
 
 Whether you're building APIs, refactoring React components, cleaning up dead code, or fixing security issues, these skills give your AI assistant clear instructions to deliver clean, production-ready code with less back-and-forth.
+
+---
+
+## 🚀 How to Use
+
+You can install and use these skills either **globally** (available across all chats/projects) or **project-specifically** (scoped to a single codebase).
+
+### 1. Claude (Claude Code, Desktop, & Web)
+
+* **Project-Specific (Current Repository):**
+  * **Claude Code / CLI:** Place the skill folder in your project's `.claude/skills/` directory:
+    ```bash
+    cp -r <skill-name> /path/to/project/.claude/skills/
+    ```
+  * **Claude.ai Projects:** Add the `SKILL.md` file to your **Project Knowledge** or paste into **Project Instructions**.
+
+* **Global (All Projects):**
+  * **Claude Code / CLI:** Place the skill folder in your global skills directory:
+    ```bash
+    cp -r <skill-name> ~/.claude/skills/
+    ```
+  * **Claude.ai Web:** Paste the skill instructions into your account's **Custom Instructions** (Profile Settings).
+
+---
+
+### 2. Antigravity & Agent IDEs
+
+* **Project-Specific (Current Workspace):**
+  * Place the skill folder inside `.agents/skills/` at your project root:
+    ```bash
+    cp -r <skill-name> /path/to/project/.agents/skills/
+    ```
+
+* **Global (All Workspaces):**
+  * Place the skill folder inside your global customizations directory:
+    ```bash
+    cp -r <skill-name> ~/.gemini/config/skills/
+    ```
 
 ---
 
@@ -49,6 +87,7 @@ Whether you're building APIs, refactoring React components, cleaning up dead cod
 | [`JS-dead-code-removal`](./JS-dead-code-removal/SKILL.md) | Code Quality | Evidence-based dead code pruning | Safely trimming JS/TS bundles without breaking behavior |
 | [`explain-code`](./explain-code/SKILL.md) | Learning | Beginner-friendly code walkthroughs | Understanding data flow, hooks, and complex logic |
 | [`brief-answers`](./brief-answers/SKILL.md) | Productivity | Ultra-concise communication | 3–4 line high-density answers without preamble |
+| [`llms-txt`](./llms-txt/SKILL.md) | Documentation | LLM-readable codebase summary | Generating a structured `llms.txt` for any repo |
 
 ---
 
@@ -122,77 +161,11 @@ Whether you're building APIs, refactoring React components, cleaning up dead cod
 
 ---
 
-## 🚀 How to Use
+### 6. Documentation & LLM Context
 
-You can install and use these skills either **globally** (available across all chats/projects) or **project-specifically** (scoped to a single codebase).
-
-### 1. Claude (Claude Code, Desktop, & Web)
-
-* **Project-Specific (Current Repository):**
-  * **Claude Code / CLI:** Place the skill folder in your project's `.claude/skills/` directory:
-    ```bash
-    cp -r <skill-name> /path/to/project/.claude/skills/
-    ```
-  * **Claude.ai Projects:** Add the `SKILL.md` file to your **Project Knowledge** or paste into **Project Instructions**.
-
-* **Global (All Projects):**
-  * **Claude Code / CLI:** Place the skill folder in your global skills directory:
-    ```bash
-    cp -r <skill-name> ~/.claude/skills/
-    ```
-  * **Claude.ai Web:** Paste the skill instructions into your account's **Custom Instructions** (Profile Settings).
-
----
-
-### 2. Antigravity & Agent IDEs
-
-* **Project-Specific (Current Workspace):**
-  * Place the skill folder inside `.agents/skills/` at your project root:
-    ```bash
-    cp -r <skill-name> /path/to/project/.agents/skills/
-    ```
-
-* **Global (All Workspaces):**
-  * Place the skill folder inside your global customizations directory:
-    ```bash
-    cp -r <skill-name> ~/.gemini/config/skills/
-    ```
-
----
-
-## 📁 Directory Structure
-
-```text
-dev-skills/
-├── README.md
-├── JS-dead-code-removal/
-│   ├── SKILL.md
-│   └── references/
-│       ├── security-checklist.md
-│       └── tooling.md
-├── brief-answers/
-│   └── SKILL.md
-├── connect-react-to-node-backend/
-│   └── SKILL.md
-├── create-express-api/
-│   └── SKILL.md
-├── explain-code/
-│   └── SKILL.md
-├── feasibility-check/
-│   └── SKILL.md
-├── fix-js-sec-bug/
-│   └── SKILL.md
-├── improve-ux/
-│   └── SKILL.md
-├── refactor-react-modular/
-│   └── SKILL.md
-├── refactor-css/
-│   └── SKILL.md
-├── refactor-node/
-│   └── SKILL.md
-└── refactor-python/
-    └── SKILL.md
-```
+#### [`llms-txt`](./llms-txt/SKILL.md)
+* **Trigger:** *"Generate llms.txt"*, *"Create llms.txt"*, *"Document this codebase for LLMs"*, *"Make this repo LLM-readable"*
+* **Description:** Generates a comprehensive `llms.txt` file at the codebase root containing title, description, usage, tech stack, directory tree, and file-by-file reference with key classes and functions. Uses bundled [scripts](./llms-txt/scripts/) (tree generator, symbol extractor) for mechanical tasks to minimise token usage — LLM reasoning is reserved for understanding and explanation only.
 
 ---
 
