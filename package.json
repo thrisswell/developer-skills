@@ -1,0 +1,46 @@
+{
+  "name": "developer-skills",
+  "version": "1.0.3",
+  "description": "Curated developer skills for Claude and AI coding agents",
+  "main": "index.js",
+  "bin": {
+    "developer-skills": "./bin/cli.js",
+    "dev-skills": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thrisswell/dev-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thrisswell/dev-skills/issues"
+  },
+  "homepage": "https://github.com/thrisswell/dev-skills#readme",
+  "keywords": [
+    "claude",
+    "ai-skills",
+    "agentic-coding",
+    "claude-code",
+    "antigravity",
+    "developer-tools"
+  ],
+  "files": [
+    "bin/",
+    "JS-dead-code-removal/",
+    "brief-answers/",
+    "connect-react-to-node-backend/",
+    "create-express-api/",
+    "explain-code/",
+    "feasibility-check/",
+    "fix-js-sec-bug/",
+    "improve-ux-ux/",
+    "llms-txt/",
+    "refactor-react-modular/",
+    "refactor-css/",
+    "refactor-node/",
+    "refactor-python/",
+    "README.md",
+    "license.txt"
+  ],
+  "author": "Sandeep Tripathy",
+  "license": "MIT"
+}

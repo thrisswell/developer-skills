@@ -35,9 +35,32 @@ Whether you're building APIs, refactoring React components, cleaning up dead cod
 
 ## 🚀 How to Use
 
-You can install and use these skills either **globally** (available across all chats/projects) or **project-specifically** (scoped to a single codebase).
+You can install skills using the **`developer-skills` CLI** (recommended) or manually by copying folders.
 
-### 1. Claude (Claude Code, Desktop, & Web)
+### Via CLI (Recommended)
+
+Install any skill instantly using `npx` — no manual file copying needed:
+
+```bash
+# See all available skills
+npx developer-skills list
+
+# Install a specific skill (project-level)
+npx developer-skills add <skill-name> --claude       # for Claude Code
+npx developer-skills add <skill-name> --agent        # for Antigravity & Agent IDEs
+
+# Install all skills at once
+npx developer-skills add --claude --global           # all skills, globally for Claude
+npx developer-skills add --agent --global            # all skills, globally for Agent IDEs
+```
+
+> **`--global`** installs to your home directory (`~/.claude/skills/` or `~/.gemini/config/skills/`), making the skill available across **all projects** on your machine.
+
+---
+
+### Manual Installation
+
+#### 1. Claude (Claude Code, Desktop & Web)
 
 * **Project-Specific (Current Repository):**
   * **Claude Code / CLI:** Place the skill folder in your project's `.claude/skills/` directory:
@@ -55,7 +78,7 @@ You can install and use these skills either **globally** (available across all c
 
 ---
 
-### 2. Antigravity & Agent IDEs
+#### 2. Antigravity & Agent IDEs
 
 * **Project-Specific (Current Workspace):**
   * Place the skill folder inside `.agents/skills/` at your project root:
