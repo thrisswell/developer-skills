@@ -1,9 +1,9 @@
-# Developer Skills for Claude & AI Agents
+# Developer Skills for Claude Code & AI Coding
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Skills Standard](https://img.shields.io/badge/Format-Agentic%20Skills%20(SKILL.md)-blue)](https://github.com)
+[![Skills Standard](<https://img.shields.io/badge/Format-Agentic%20Skills%20(SKILL.md)-blue>)](https://github.com)
 
-A curated collection of modular, production-grade skills and instructions for Claude and AI coding agents. These skills provide specialized workflows, security baselines, architectural reviews, and code refactoring guidelines for real-world software engineering tasks.
+A curated collection of modular, production-grade skills and instructions for Claude Code, Antigravity, VS Code and other AI coding agents. These skills provide specialized workflows, security baselines, architectural reviews, and code refactoring guidelines for real-world software engineering tasks.
 
 ---
 
@@ -27,7 +27,7 @@ A curated collection of modular, production-grade skills and instructions for Cl
 
 ## 📖 Overview
 
-This is a collection of ready-to-use skills built for JavaScript and Python developers to make everyday coding easier. 
+This is a collection of ready-to-use skills built for JavaScript and Python developers to make everyday coding easier.
 
 Whether you're building APIs, refactoring React components, cleaning up dead code, or fixing security issues, these skills give your AI assistant clear instructions to deliver clean, production-ready code with less back-and-forth.
 
@@ -62,32 +62,32 @@ npx developer-skills add --agent --global            # all skills, globally for 
 
 #### 1. Claude (Claude Code, Desktop & Web)
 
-* **Project-Specific (Current Repository):**
-  * **Claude Code / CLI:** Place the skill folder in your project's `.claude/skills/` directory:
+- **Project-Specific (Current Repository):**
+  - **Claude Code / CLI:** Place the skill folder in your project's `.claude/skills/` directory:
     ```bash
     cp -r <skill-name> /path/to/project/.claude/skills/
     ```
-  * **Claude.ai Projects:** Add the `SKILL.md` file to your **Project Knowledge** or paste into **Project Instructions**.
+  - **Claude.ai Projects:** Add the `SKILL.md` file to your **Project Knowledge** or paste into **Project Instructions**.
 
-* **Global (All Projects):**
-  * **Claude Code / CLI:** Place the skill folder in your global skills directory:
+- **Global (All Projects):**
+  - **Claude Code / CLI:** Place the skill folder in your global skills directory:
     ```bash
     cp -r <skill-name> ~/.claude/skills/
     ```
-  * **Claude.ai Web:** Paste the skill instructions into your account's **Custom Instructions** (Profile Settings).
+  - **Claude.ai Web:** Paste the skill instructions into your account's **Custom Instructions** (Profile Settings).
 
 ---
 
 #### 2. Antigravity & Agent IDEs
 
-* **Project-Specific (Current Workspace):**
-  * Place the skill folder inside `.agents/skills/` at your project root:
+- **Project-Specific (Current Workspace):**
+  - Place the skill folder inside `.agents/skills/` at your project root:
     ```bash
     cp -r <skill-name> /path/to/project/.agents/skills/
     ```
 
-* **Global (All Workspaces):**
-  * Place the skill folder inside your global customizations directory:
+- **Global (All Workspaces):**
+  - Place the skill folder inside your global customizations directory:
     ```bash
     cp -r <skill-name> ~/.gemini/config/skills/
     ```
@@ -96,21 +96,21 @@ npx developer-skills add --agent --global            # all skills, globally for 
 
 ## 🗂️ Skills Catalog
 
-| Skill | Category | Primary Focus | Best Used For |
-| :--- | :--- | :--- | :--- |
-| [`feasibility-check`](./feasibility-check/SKILL.md) | Architecture | Technical viability evaluation | Reality-checking proposals before writing code |
-| [`create-express-api`](./create-express-api/SKILL.md) | Backend | Express.js REST API scaffolding | Clean, secure REST endpoints and routing |
-| [`refactor-node`](./refactor-node/SKILL.md) | Backend | Production Node.js best practices | Hardened backend services, middleware, and DB queries |
-| [`refactor-python`](./refactor-python/SKILL.md) | Backend | Modern Python & PEP 8 standards | Clean typing, defensive errors, and SAST hardening |
-| [`connect-react-to-node-backend`](./connect-react-to-node-backend/SKILL.md) | Fullstack | Frontend-to-Backend integration | Wiring React UI components to backend endpoints |
-| [`refactor-react-modular`](./refactor-react-modular/SKILL.md) | Frontend | React component modularization | Breaking monolithic components into reusable units |
-| [`improve-ux`](./improve-ux/SKILL.md) | Frontend | UI/UX polish & accessibility | Enhancing layout, responsive design, spacing, and a11y |
-| [`refactor-css`](./refactor-css/SKILL.md) | Frontend | CSS modernization & responsiveness | Cleaning legacy styles, naming, and mobile responsiveness |
-| [`fix-js-sec-bug`](./fix-js-sec-bug/SKILL.md) | Security | Root-cause vulnerability patching | Resolving SAST findings (Snyk, SonarQube, Semgrep, audit) |
-| [`JS-dead-code-removal`](./JS-dead-code-removal/SKILL.md) | Code Quality | Evidence-based dead code pruning | Safely trimming JS/TS bundles without breaking behavior |
-| [`explain-code`](./explain-code/SKILL.md) | Learning | Beginner-friendly code walkthroughs | Understanding data flow, hooks, and complex logic |
-| [`brief-answers`](./brief-answers/SKILL.md) | Productivity | Ultra-concise communication | 3–4 line high-density answers without preamble |
-| [`llms-txt`](./llms-txt/SKILL.md) | Documentation | LLM-readable codebase summary | Generating a structured `llms.txt` for any repo |
+| Skill                                                                       | Category      | Primary Focus                       | Best Used For                                             |
+| :-------------------------------------------------------------------------- | :------------ | :---------------------------------- | :-------------------------------------------------------- |
+| [`feasibility-check`](./feasibility-check/SKILL.md)                         | Architecture  | Technical viability evaluation      | Reality-checking proposals before writing code            |
+| [`create-express-api`](./create-express-api/SKILL.md)                       | Backend       | Express.js REST API scaffolding     | Clean, secure REST endpoints and routing                  |
+| [`refactor-node`](./refactor-node/SKILL.md)                                 | Backend       | Production Node.js best practices   | Hardened backend services, middleware, and DB queries     |
+| [`refactor-python`](./refactor-python/SKILL.md)                             | Backend       | Modern Python & PEP 8 standards     | Clean typing, defensive errors, and SAST hardening        |
+| [`connect-react-to-node-backend`](./connect-react-to-node-backend/SKILL.md) | Fullstack     | Frontend-to-Backend integration     | Wiring React UI components to backend endpoints           |
+| [`refactor-react-modular`](./refactor-react-modular/SKILL.md)               | Frontend      | React component modularization      | Breaking monolithic components into reusable units        |
+| [`improve-ux`](./improve-ux/SKILL.md)                                       | Frontend      | UI/UX polish & accessibility        | Enhancing layout, responsive design, spacing, and a11y    |
+| [`refactor-css`](./refactor-css/SKILL.md)                                   | Frontend      | CSS modernization & responsiveness  | Cleaning legacy styles, naming, and mobile responsiveness |
+| [`fix-js-sec-bug`](./fix-js-sec-bug/SKILL.md)                               | Security      | Root-cause vulnerability patching   | Resolving SAST findings (Snyk, SonarQube, Semgrep, audit) |
+| [`JS-dead-code-removal`](./JS-dead-code-removal/SKILL.md)                   | Code Quality  | Evidence-based dead code pruning    | Safely trimming JS/TS bundles without breaking behavior   |
+| [`explain-code`](./explain-code/SKILL.md)                                   | Learning      | Beginner-friendly code walkthroughs | Understanding data flow, hooks, and complex logic         |
+| [`brief-answers`](./brief-answers/SKILL.md)                                 | Productivity  | Ultra-concise communication         | 3–4 line high-density answers without preamble            |
+| [`llms-txt`](./llms-txt/SKILL.md)                                           | Documentation | LLM-readable codebase summary       | Generating a structured `llms.txt` for any repo           |
 
 ---
 
@@ -119,76 +119,89 @@ npx developer-skills add --agent --global            # all skills, globally for 
 ### 1. Architecture & Planning
 
 #### [`feasibility-check`](./feasibility-check/SKILL.md)
-* **Trigger:** *"Is it feasible to..."*, *"Can we build..."*, *"Would it work if..."*, *"Technical check before I start..."*
-* **Description:** Evaluates technical viability, complexity, trade-offs, edge cases, and dependency hurdles before writing code. Deliberately performs analysis and reports findings without making unprompted file changes.
+
+- **Trigger:** _"Is it feasible to..."_, _"Can we build..."_, _"Would it work if..."_, _"Technical check before I start..."_
+- **Description:** Evaluates technical viability, complexity, trade-offs, edge cases, and dependency hurdles before writing code. Deliberately performs analysis and reports findings without making unprompted file changes.
 
 ---
 
 ### 2. Frontend & UI/UX
 
 #### [`refactor-react-modular`](./refactor-react-modular/SKILL.md)
-* **Trigger:** *"Refactor this React component"*, *"Break this component down"*, *"Modularize frontend"*
-* **Description:** Splits monolithic React components into clean, testable, and reusable child components while preserving state integrity and design guidelines.
+
+- **Trigger:** _"Refactor this React component"_, _"Break this component down"_, _"Modularize frontend"_
+- **Description:** Splits monolithic React components into clean, testable, and reusable child components while preserving state integrity and design guidelines.
 
 #### [`improve-ux`](./improve-ux/SKILL.md)
-* **Trigger:** *"Improve UX"*, *"Make this UI look better"*, *"Polish this React component"*
-* **Description:** Elevates user interface quality by optimizing spacing, visual hierarchy, typography, mobile responsiveness, and WCAG accessibility standards.
+
+- **Trigger:** _"Improve UX"_, _"Make this UI look better"_, _"Polish this React component"_
+- **Description:** Elevates user interface quality by optimizing spacing, visual hierarchy, typography, mobile responsiveness, and WCAG accessibility standards.
 
 #### [`refactor-css`](./refactor-css/SKILL.md)
-* **Trigger:** *"Clean up this CSS"*, *"Make styles responsive"*, *"Modernize CSS"*
-* **Description:** Refactors legacy or messy stylesheets into clean, modern, and responsive CSS with clear naming conventions and reduced specificity battles.
+
+- **Trigger:** _"Clean up this CSS"_, _"Make styles responsive"_, _"Modernize CSS"_
+- **Description:** Refactors legacy or messy stylesheets into clean, modern, and responsive CSS with clear naming conventions and reduced specificity battles.
 
 #### [`connect-react-to-node-backend`](./connect-react-to-node-backend/SKILL.md)
-* **Trigger:** *"Connect frontend to backend"*, *"Integrate API with React"*, *"Fetch data from Node API"*
-* **Description:** Bridges React client components to Node.js backend endpoints with robust handling for loading states, error states, and payload serialization.
+
+- **Trigger:** _"Connect frontend to backend"_, _"Integrate API with React"_, _"Fetch data from Node API"_
+- **Description:** Bridges React client components to Node.js backend endpoints with robust handling for loading states, error states, and payload serialization.
 
 ---
 
 ### 3. Backend & APIs
 
 #### [`create-express-api`](./create-express-api/SKILL.md)
-* **Trigger:** *"Create an Express API"*, *"Scaffold REST endpoints"*, *"Build Node backend for requirement X"*
-* **Description:** Creates organized, maintainable Express.js endpoints adhering to REST principles, centralized error handling, and cybersecurity baselines.
+
+- **Trigger:** _"Create an Express API"_, _"Scaffold REST endpoints"_, _"Build Node backend for requirement X"_
+- **Description:** Creates organized, maintainable Express.js endpoints adhering to REST principles, centralized error handling, and cybersecurity baselines.
 
 #### [`refactor-node`](./refactor-node/SKILL.md)
-* **Trigger:** *"Refactor Node.js"*, *"Harden Express backend"*, *"Make this service production-ready"*
-* **Description:** Applies production-grade Node.js standards: input validation schemas, parameterized DB queries (Postgres/MongoDB), structured logging, rate limits, timeouts, and safe headers.
+
+- **Trigger:** _"Refactor Node.js"_, _"Harden Express backend"_, _"Make this service production-ready"_
+- **Description:** Applies production-grade Node.js standards: input validation schemas, parameterized DB queries (Postgres/MongoDB), structured logging, rate limits, timeouts, and safe headers.
 
 #### [`refactor-python`](./refactor-python/SKILL.md)
-* **Trigger:** *"Write Python service"*, *"Refactor Python code"*, *"Apply Python best practices"*
-* **Description:** Enforces PEP 8, strict type hints, dependency management, structured logging, defensive error handling, and OWASP/SAST security hardening (Bandit, Semgrep, ruff).
+
+- **Trigger:** _"Write Python service"_, _"Refactor Python code"_, _"Apply Python best practices"_
+- **Description:** Enforces PEP 8, strict type hints, dependency management, structured logging, defensive error handling, and OWASP/SAST security hardening (Bandit, Semgrep, ruff).
 
 ---
 
 ### 4. Security & Code Quality
 
 #### [`fix-js-sec-bug`](./fix-js-sec-bug/SKILL.md)
-* **Trigger:** Scanner findings (Snyk, SonarQube, Semgrep, npm audit), CVE reports, pen-test notes.
-* **Description:** Performs root-cause remediation of security flaws across full-stack JavaScript (Node.js and React), eliminating vulnerabilities without superficial band-aids.
+
+- **Trigger:** Scanner findings (Snyk, SonarQube, Semgrep, npm audit), CVE reports, pen-test notes.
+- **Description:** Performs root-cause remediation of security flaws across full-stack JavaScript (Node.js and React), eliminating vulnerabilities without superficial band-aids.
 
 #### [`JS-dead-code-removal`](./JS-dead-code-removal/SKILL.md)
-* **Trigger:** *"Remove dead code"*, *"Delete unused imports/functions"*, *"Shrink bundle size safely"*
-* **Description:** Eliminates provably unused code in JS/TS files. Includes reference guides for [Tooling](./JS-dead-code-removal/references/tooling.md) and a [Security Checklist](./JS-dead-code-removal/references/security-checklist.md) to prevent breaking dynamic references.
+
+- **Trigger:** _"Remove dead code"_, _"Delete unused imports/functions"_, _"Shrink bundle size safely"_
+- **Description:** Eliminates provably unused code in JS/TS files. Includes reference guides for [Tooling](./JS-dead-code-removal/references/tooling.md) and a [Security Checklist](./JS-dead-code-removal/references/security-checklist.md) to prevent breaking dynamic references.
 
 ---
 
 ### 5. Code Understanding & Communication
 
 #### [`explain-code`](./explain-code/SKILL.md)
-* **Trigger:** *"Explain this code"*, *"Help me understand this function"*, *"Walk me through the data flow"*
-* **Description:** Breaks down confusing code step-by-step for beginner developers, explaining high-level purpose, component interactions, hooks, and modification tips.
+
+- **Trigger:** _"Explain this code"_, _"Help me understand this function"_, _"Walk me through the data flow"_
+- **Description:** Breaks down confusing code step-by-step for beginner developers, explaining high-level purpose, component interactions, hooks, and modification tips.
 
 #### [`brief-answers`](./brief-answers/SKILL.md)
-* **Trigger:** Explicit only — `/brief`, *"keep it short"*, *"tl;dr"*, *"quick answer"*
-* **Description:** Delivers dense, 3–4 line responses with zero filler, no conversational preambles, and immediate value.
+
+- **Trigger:** Explicit only — `/brief`, _"keep it short"_, _"tl;dr"_, _"quick answer"_
+- **Description:** Delivers dense, 3–4 line responses with zero filler, no conversational preambles, and immediate value.
 
 ---
 
 ### 6. Documentation & LLM Context
 
 #### [`llms-txt`](./llms-txt/SKILL.md)
-* **Trigger:** *"Generate llms.txt"*, *"Create llms.txt"*, *"Document this codebase for LLMs"*, *"Make this repo LLM-readable"*
-* **Description:** Generates a comprehensive `llms.txt` file at the codebase root containing title, description, usage, tech stack, directory tree, and file-by-file reference with key classes and functions. Uses bundled [scripts](./llms-txt/scripts/) (tree generator, symbol extractor) for mechanical tasks to minimise token usage — LLM reasoning is reserved for understanding and explanation only.
+
+- **Trigger:** _"Generate llms.txt"_, _"Create llms.txt"_, _"Document this codebase for LLMs"_, _"Make this repo LLM-readable"_
+- **Description:** Generates a comprehensive `llms.txt` file at the codebase root containing title, description, usage, tech stack, directory tree, and file-by-file reference with key classes and functions. Uses bundled [scripts](./llms-txt/scripts/) (tree generator, symbol extractor) for mechanical tasks to minimise token usage — LLM reasoning is reserved for understanding and explanation only.
 
 ---
 
